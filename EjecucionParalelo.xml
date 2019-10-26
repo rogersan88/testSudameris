@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="2">
+	<listeners>
+		<listener class-name="utils.TestNGListenersAndroid"></listener>
+	</listeners>
+
+
+	<test thread-count="5" name="Test1">
+		<parameter name="deviceName" value="BH904PF85K"></parameter>
+		<parameter name="version" value="8.0.0"></parameter>
+		<parameter name="port" value="8200"></parameter>
+
+		<classes>
+			<class name="tests.test">
+				<methods>
+					<include name="testTriangulos" />
+
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="Test2">
+		<parameter name="deviceName" value="LCL7N18A19007855"></parameter>
+		<parameter name="version" value="9"></parameter>
+		<parameter name="port" value="8201"></parameter>
+
+		<classes>
+			<class name="tests.test">
+				<methods>
+					<include name="testTriangulos" />
+
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+
+
+</suite> <!-- Suite -->

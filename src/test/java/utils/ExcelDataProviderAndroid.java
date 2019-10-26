@@ -84,11 +84,11 @@ public class ExcelDataProviderAndroid {
 		return data;
 	}
 
-	@DataProvider(name = "TestLogin")
+	@DataProvider(name = "dataTestTriangulo")
 	public Object[][] getDataLogin(ITestContext context) {
 
 		String projectPath = System.getProperty("user.dir");
-		Object data[][] = testData(projectPath + "/src/test/resources/Datos.xlsx", "Triangulos");
+		Object data[][] = testData(projectPath + "/src/test/resources/Data.xlsx", "Triangulos");
 		return data;
 	}
 }

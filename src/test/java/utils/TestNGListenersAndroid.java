@@ -9,7 +9,7 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-public class TestNGListenersAndroidMarkets extends tests.test implements ITestListener {
+public class TestNGListenersAndroid extends tests.test implements ITestListener {
 
 	private static String getTestMethodName(ITestResult iTestResult) {
 		return iTestResult.getMethod().getConstructorOrMethod().getName();
